@@ -32,3 +32,14 @@ def check_res_id(res_id):
         return False
     else:
         return True
+
+
+# Create the URL for the datastore search end-point
+def ds_search_url():
+    """
+    "Creates the URL for the datastore search end-point"
+    :return: a URL
+    """
+    search_url = "https://www.opendata.nhs.scot/api/3/action/datastore_search"
+
+    return search_url
