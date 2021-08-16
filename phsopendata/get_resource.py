@@ -1,5 +1,7 @@
 # Get Open Data resource
 
+# Load required packages
+import re
 
 # Open Data user agent
 def opendata_ua():
@@ -13,3 +15,20 @@ def opendata_ua():
     }
 
     return headers
+
+
+# Check if a resource ID is valid
+def check_res_id(res_id):
+    """
+    "Used to attempt to validate a res_id before submitting to the API"
+    :param res_id: a resource ID
+    :return: TRUE/FALSE indicating the validity of the res_id
+    """
+    res_id_regex = "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+
+    if not isinstance(res_id, str):
+        return False
+    if not re.search(res_id_regex, res_id):
+        return False
+    else:
+        return True
