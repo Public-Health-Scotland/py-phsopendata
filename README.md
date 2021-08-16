@@ -2,6 +2,10 @@
 
 *In early development*
 
+<!-- badges: start -->
+[![Build Status](https://www.travis-ci.com/Public-Health-Scotland/py-phsopendata.svg?branch=main)](https://www.travis-ci.com/Public-Health-Scotland/py-phsopendata)
+<!-- badges: end -->
+
 The Python `phsopendata` package contains functions to interact with open data from the
 [Scottish Health and Social Care Open Data
 platform](https://www.opendata.nhs.scot/) via the CKAN API.
