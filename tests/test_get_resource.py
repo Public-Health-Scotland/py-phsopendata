@@ -37,3 +37,11 @@ def test_data_complete():
 
     # Checks for total rows returned when no rows argument supplied
     assert len(get_resource(gp_list_apr_2021)) == 926
+
+
+def test_data_rows():
+    # Tests full data is returned when rows argument > 99999 (takes ~2min to return test result due to size of query)
+    prescriptions_apr_2021 = "51b7ad3f-6d52-4165-94f4-92e322656c85"
+
+    # Checks for total rows returned when row argument provided > 99999
+    assert len(get_resource(prescriptions_apr_2021, 100000)) == 1142605
