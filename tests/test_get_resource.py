@@ -29,3 +29,11 @@ def test_error_argument_type():
         get_resource(res_id="a794d603-95ab-4309-8c92-b48970478c1")
     assert exception_info.type is ValueError
     assert re.search("The resource ID supplied \\('.+?'\\) is invalid", exception_info.value.args[0])
+
+
+def test_data_complete():
+    # Tests full data is returned when no rows argument is provided
+    gp_list_apr_2021 = "a794d603-95ab-4309-8c92-b48970478c14"
+
+    # Checks for total rows returned when no rows argument supplied
+    assert len(get_resource(gp_list_apr_2021)) == 926
