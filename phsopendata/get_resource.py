@@ -43,3 +43,15 @@ def ds_search_url():
     search_url = "https://www.opendata.nhs.scot/api/3/action/datastore_search"
 
     return search_url
+
+
+# Create the URL for the datastore dump end-point
+def ds_dump_url(res_id):
+    """
+    "Creates the URL for the datastore dump end-point"
+    :param res_id: a resource ID
+    :return: a URL
+    """
+    dump_url = "https://www.opendata.nhs.scot/datastore/dump/%s?bom=true" % res_id
+
+    return dump_url
