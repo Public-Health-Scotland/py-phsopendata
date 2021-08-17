@@ -34,10 +34,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: pytest-cov
-      # You may pin to the exact commit or the version.
-      # uses: lpenz/ghaction-pytest-cov@e7d3d83610d0e4a25353bc80198ff3dc47cfe114
-      uses: lpenz/ghaction-pytest-cov@v1
-      with:
-        # Run pytest in this directory
-        working-directory: .
