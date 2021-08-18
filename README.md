@@ -10,7 +10,7 @@ The Python `phsopendata` package contains functions to interact with open data f
 
 -   `get-resource` extracts a single resource from an open dataset by resource id
 
-For extracting metadata and search functionality, we recommend using the [ckanr package](https://docs.ropensci.org/ckanr/).
+For extracting metadata and search functionality, we recommend using the [ckanapi package](https://github.com/ckan/ckanapi).
 
 
 Installation
