@@ -3,7 +3,7 @@
 *In early development*
 
 <!-- badges: start -->
-[![Python application](https://github.com/Public-Health-Scotland/py-phsopendata/actions/workflows/python-app.yml/badge.svg)](https://github.com/Public-Health-Scotland/py-phsopendata/actions/workflows/python-app.yml)
+[![Python application](https://github.com/Public-Health-Scotland/py-phsopendata/actions/workflows/python-app.yml/badge.svg)](https://github.com/Public-Health-Scotland/py-phsopendata/actions/workflows/python-app.yml) [![codecov](https://codecov.io/gh/Public-Health-Scotland/py-phsopendata/branch/main/graph/badge.svg?token=6fJ4sYJILC)](https://codecov.io/gh/Public-Health-Scotland/py-phsopendata)
 <!-- badges: end -->
 
 The Python `phsopendata` package contains functions to interact with open data from the [Scottish Health and Social Care Open Data platform](https://www.opendata.nhs.scot/) via the CKAN API.
