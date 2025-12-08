@@ -11,10 +11,11 @@ import warnings
 # Get all resources from the Open data website
 def get_all_resources(package_contains: str = None, resource_contains: str = None) -> pd.DataFrame:
        
-    """Provides an overview of all resources available from https://www.opendata.nhs.scot/, 
+    """
+    "Provides an overview of all resources available from https://www.opendata.nhs.scot/, 
     with the option to limit results based on both package 
     and resource names. The returned data.frame can be used to look-up package 
-    and resource ids and is useful for exploring the available data sets.
+    and resource ids and is useful for exploring the available data sets."
 
     Args:
         package_contains (str, optional): a character string containing an expression to be used as search criteria against the packages 'title' field. Defaults to None.
