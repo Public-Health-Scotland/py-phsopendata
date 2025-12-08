@@ -1,1 +1,2 @@
 from phsopendata.get_resource import get_resource
+from phsopendata.get_all_resources import get_all_resources

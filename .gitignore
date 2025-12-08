@@ -6,3 +6,6 @@
 .DS_Store/
 Thumbs.db
 
+.venv
+demo.ipynb
+__pycache__
