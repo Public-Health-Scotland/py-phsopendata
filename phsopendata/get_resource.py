@@ -1,12 +1,10 @@
 # Get helper functions
 from utils import check_res_id, get_resource_sql, request_url, dump_download, opendata_ua, parse_col_select,parse_row_filters
 #load packages
-import re
 import requests
 import warnings
 import pandas as pd
-import io
-from typing import Iterable, Optional, Union, List, Any, Mapping, Tuple, Dict, Sequence
+from typing import Optional, Any, Mapping, Dict, Sequence
 import json
 
 # Get Open Data resource

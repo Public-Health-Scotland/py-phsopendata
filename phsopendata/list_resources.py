@@ -2,11 +2,8 @@
 from utils import opendata_ua, request_url,check_dataset_name,suggest_dataset_name
 
 #Load packages
-import re
 import requests
 import pandas as pd
-import warnings
-from typing import Optional
 
 def list_resources(dataset_name:str)-> pd.DataFrame:
     """

@@ -1,15 +1,14 @@
 # Get helper functions
 from get_resource import get_resource
-from utils import check_res_id, ds_dump_url, opendata_ua, check_dataset_name,request_url, suggest_dataset_name
+from utils import opendata_ua, check_dataset_name,request_url, suggest_dataset_name
 
 #Load packages
-import re
+
 import requests
 import pandas as pd
 import warnings
-from rapidfuzz import process, fuzz
-from typing import Iterable, Optional, Union, List, Any, Mapping, Tuple, Dict, Sequence
-import json
+from typing import Optional, List, Any, Mapping, Sequence
+
 
 def get_dataset(dataset_name: str, max_resources: Optional[int] = None, rows: Optional[int] = None,
 row_filters: Optional[Mapping[str, Any]] = None, col_select: Optional[Sequence[str]] = None, 

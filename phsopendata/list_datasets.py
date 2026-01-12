@@ -2,10 +2,9 @@
 from utils import opendata_ua, request_url
 
 #Load packages
-import re
 import requests
 import pandas as pd
-import warnings
+
 
 def list_datasets()-> pd.DataFrame:
     """

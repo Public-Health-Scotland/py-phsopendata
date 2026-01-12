@@ -56,6 +56,7 @@ def list_all_resources(dataset_contains: Optional[str] = None, resource_contains
     data = resources_df[['name','id','package_name','package_id','url','last_modified']]
     data = data.rename(columns ={'name' : 'resource_name','id' : 'resource_id', 'package_name' : 'dataset_name',
     'package_id': 'dataset_id'  } )
+    data['last_modified'] = pd.to_datetime(data['last_modified'],format='%Y-%m-%dT%H:%M:%S.%f').dt.floor('s') 
     
     #If package_contains is not none
     if dataset_contains is not None:
