@@ -1,2 +1,5 @@
 from phsopendata.get_resource import get_resource
-from phsopendata.get_all_resources import get_all_resources
+from phsopendata.list_all_resources import list_all_resources
+from phsopendata.get_dataset import get_dataset
+from phsopendata.list_datasets import list_datasets
+from phsopendata.list_resources import list_resources
