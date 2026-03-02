@@ -1,6 +1,6 @@
 # Get helper functions
-from get_resource import get_resource
-from utils import opendata_ua, check_dataset_name,request_url, suggest_dataset_name
+
+from phsopendata.utils import opendata_ua, check_dataset_name,request_url, suggest_dataset_name
 
 #Load packages
 
@@ -13,6 +13,7 @@ from typing import Optional, List, Any, Mapping, Sequence
 def get_dataset(dataset_name: str, max_resources: Optional[int] = None, rows: Optional[int] = None,
 row_filters: Optional[Mapping[str, Any]] = None, col_select: Optional[Sequence[str]] = None, 
 include_context: Optional[bool] = False) -> pd.DataFrame:
+    from phsopendata.get_resource import get_resource
     """
     "Downloads a single resource from the NHS Open Data platform by resource ID, with optional filtering and column selection."
 
