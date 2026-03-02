@@ -1,5 +1,5 @@
 # Get helper functions
-from utils import opendata_ua, request_url
+from phsopendata.utils import opendata_ua, request_url
 
 #Load packages
 import re
