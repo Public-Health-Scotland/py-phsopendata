@@ -1,5 +1,5 @@
 # Get helper functions
-from phsopendata.utils import check_res_id, get_resource_sql, request_url, dump_download, opendata_ua, parse_col_select,parse_row_filters
+from utils import check_res_id, get_resource_sql, request_url, dump_download, opendata_ua, parse_col_select,parse_row_filters
 #load packages
 import requests
 import warnings
